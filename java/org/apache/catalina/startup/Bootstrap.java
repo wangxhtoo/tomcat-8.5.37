@@ -134,6 +134,9 @@ public final class Bootstrap {
 
 	// -------------------------------------------------------- Private Methods
 
+	/**
+	 * 初始化类加载器
+	 */
 	private void initClassLoaders() {
 		try {
 			commonLoader = createClassLoader("common", null);
@@ -235,6 +238,8 @@ public final class Bootstrap {
 	/**
 	 * Initialize daemon.
 	 * 
+	 * 初始化守护进程
+	 * 
 	 * @throws Exception Fatal initialization error
 	 */
 	public void init() throws Exception {
@@ -268,6 +273,9 @@ public final class Bootstrap {
 
 	/**
 	 * Load daemon.
+	 * 
+	 * 加载守护进程
+	 * 
 	 */
 	private void load(String[] arguments) throws Exception {
 
